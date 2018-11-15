@@ -1,0 +1,67 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "demo",
+            "intents": [
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello"
+                    ]
+                },
+                {
+                    "name": "ColorIntent",
+                    "slots": [
+                        {
+                            "name": "Color",
+                            "type": "COLORS"
+                        }
+                    ],
+                    "samples": [
+                        "the color is {Color}",
+                        "I like the color {Color}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloNameIntent",
+                    "slots": [
+                        {
+                            "name": "Query",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "the name is {Query}",
+                        "to say hello to {Query}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "COLORS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "red"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blue"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
